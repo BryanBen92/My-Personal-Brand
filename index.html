@@ -57,17 +57,38 @@
                 <img src="/assets/images/figma.jpg" class="img-sklls">
             </div> -->
         </div>
-        <div class="form-container">
-            <div class="form-items">
-                <h1 class="h-two">Contact Me</h1>
-                <form>
-                    <input type="text" placeholder="Name" class="items" required><br>
-                    <input type="text" placeholder="Email" class="items" required><br>
-                    <textarea placeholder="Message" cols="40" rows="10" class="items 1" required></textarea><br>
-                    <input type="submit" value="Send" class="items-send">
-                </form>
-            </div>    
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contactForm" action="/submit" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+    
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://www.twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
+    
+        <!-- Font Awesome for social media icons -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
     </section>
 </body>
 </html>
